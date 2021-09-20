@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: servicio-productos
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3308/viajes?serverTimezone=UTC
+    username: root
+    password:
+  jpa:
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+server:
+  port: 8000
+  #port: 10000
